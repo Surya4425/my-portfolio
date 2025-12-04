@@ -1,0 +1,39 @@
+/* * CRITICAL: These three directives MUST be at the top of the file.
+ * They are instructions for the Tailwind compiler to generate all the styles 
+ * used by your portfolio.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------- */
+/* OPTIONAL: Custom Scrollbar and Smooth Scroll */
+/* ---------------------------------------------------- */
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling (works well in dark mode too) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Light mode track color */
+  border-radius: 4px;
+}
+
+/* Dark mode adjustment for scrollbar track */
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
